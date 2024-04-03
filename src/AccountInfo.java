@@ -12,23 +12,23 @@ class AccountInfo {
     private String bloodPressure;
     private int stepsCount;
 
-
-
     public AccountInfo(String name, int birthDay, int birthMonth, int birthYear, String email,
-                       long phoneNumber) {
+                       long phoneNumber, String surname, int weight, String bloodPressure, int stepsCount) {
         this.name = name;
         this.birthDay = birthDay;
         this.birthMonth = birthMonth;
         this.birthYear = birthYear;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.surname = surname;
+        this.weight = weight;
+        this.bloodPressure = bloodPressure;
+        this.stepsCount = stepsCount;
         this.age = birthYear - YEAR_COUNT;
     }
-
     public String getName() {
         return name;
     }
-
     public int getBirthDay() {
         return birthDay;
     }
